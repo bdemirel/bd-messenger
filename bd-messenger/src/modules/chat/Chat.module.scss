@@ -1,0 +1,59 @@
+@import "~@blueprintjs/core/lib/scss/variables";
+
+.container {
+	width: 90%;
+	max-width: calc(100% - 200px);
+	text-align: start;
+}
+
+.banner {
+	flex: 0;
+	border-bottom: 1px solid $light-gray3;
+	padding: 8px;
+
+	.online {
+		color: $green2;
+		font-size: 12px;
+		font-style: italic;
+	}
+}
+
+.chats {
+	height: calc(100vh - 6rem);
+	overflow-y: scroll;
+	padding: 8px;
+
+	.wrapper {
+		display: flex;
+		flex-direction: column;
+	}
+
+	.balloon {
+		width: max-content;
+		max-width: 75%;
+		border-radius: 6px;
+		background-color: $blue5;
+		padding: 4px 8px;
+		margin: 4px 0;
+
+		&.sent {
+			align-self: flex-end;
+			background-color: $green5;
+		}
+	}
+
+	.content {
+		font-size: 16px;
+		word-wrap: break-word;
+	}
+
+	.time {
+		text-align: end;
+		font-size: 10px;
+	}
+}
+
+.message {
+	border-top: 1px solid $light-gray3;
+	padding: 12px 8px;
+}

@@ -1,0 +1,71 @@
+@import "~@blueprintjs/core/lib/scss/variables";
+
+.sidebar {
+	box-sizing: border-box;
+	border-right: 1px solid $light-gray3;
+	height: 100vh;
+	min-width: 200px;
+	width: 10%;
+	padding-top: 1rem;
+}
+
+.title {
+	font-weight: bold;
+	color: $gray2;
+	margin-bottom: 1rem;
+}
+
+.friend {
+	background: none;
+	width: 100%;
+	border: none;
+	display: flex;
+	padding: 6px 0;
+
+	.avatar {
+		background-color: $gray4;
+		border: 2px solid $gray2;
+		border-radius: 24px;
+		display: flex;
+		align-items: center;
+		justify-content: center;
+		height: 36px;
+		width: 36px;
+		margin: 0 8px;
+
+		&.online {
+			border-color: $green2;
+		}
+	}
+
+	&:nth-child(odd) {
+		background-color: $light-gray3;
+	}
+
+	&.active {
+		background-color: $gray5;
+	}
+
+	&:hover {
+		background-color: $light-gray1;
+	}
+
+	.details {
+		width: calc(100% - 56px);
+
+
+		.name {
+			width: 100%;
+			white-space: nowrap;
+			overflow: hidden;
+			text-overflow: ellipsis;
+		}
+	
+		.status {
+			width: 100%;
+			white-space: nowrap;
+			overflow: hidden;
+			text-overflow: ellipsis;
+		}
+	}
+}
